@@ -1,5 +1,3 @@
-<!-- Please update value in the {}  -->
-
 <h1 align="center">Random Quote Generator</h1>
 
 <div align="center">
@@ -37,7 +35,7 @@
 
 ## Overview
 
-![portfolio](https://user-images.githubusercontent.com/94877748/155689216-e180ad0b-c672-4078-8c35-96ac804f5b9e.png)
+![random-quote](https://user-images.githubusercontent.com/94877748/165991809-9f7f53f1-399d-4734-ba08-0108c387cd2c.png)
 
 - You can find the demo in this [url](https://random-quote-generator-3b1f.onrender.com)
 
