@@ -11,7 +11,7 @@ interface quote{
     _id: string    
 }
 
-const url = 'https://quote-garden.herokuapp.com/api/v3/quotes/'
+const url = 'https://quote-garden.herokuapp.com/api/v3/quotes/random'
 
 const AuthorQuote = () => {
     const [authorQuotes, setAuthorQuotes] = useState<quote[]>([])
@@ -23,7 +23,7 @@ const AuthorQuote = () => {
             const { data } = await axios.get(url, {
                 params: {
                     author: params.author,
-                    limit: 3
+                    count: 3
                 }
             })
             setAuthorQuotes(data.data)
@@ -51,7 +51,7 @@ const AuthorQuote = () => {
             authorQuotes.map((quote)=>{
                 const {quoteText, _id} = quote;
                 return (
-                    <div key={_id} className="md:m-32 mt-16 px-16 md:border-l-4 border-yellow-400">
+                    <div key={_id} className="md:m-32 mt-16 px-16 md:border-l-4 sm:text-4xl text-2xl border-yellow-400">
                         <p className="text-4xl font-semibold font-Raleway">"{quoteText}"</p>
                     </div> 
                 )
